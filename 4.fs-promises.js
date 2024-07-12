@@ -1,4 +1,5 @@
 const fs = require('node:fs/promises');
+//const{promises} = require('node:util'); esto solo en los modulos nativos que no tienen promesas nativas
 console.log('leyendo archivo uno');
 fs.readFile('./archivo.txt', 'utf-8')
 .then((text) => {
